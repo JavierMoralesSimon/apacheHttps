@@ -1,13 +1,13 @@
 # HTTPS en el servidor web Apache
-### Investigación
-##### Funcionamiento del protocolo HTTPS y su importancia en la seguridad web
+## Investigación
+### Funcionamiento del protocolo HTTPS y su importancia en la seguridad web
   1. Funcionamiento:
     * Ss
   3. Importancia:
-##### Tipos de certificados SSL/TLS (autofirmado vs. CA confiable)
-##### Módulos de Apache2 necesarios para habilitar SSL/TLS en Ubuntu
+### Tipos de certificados SSL/TLS (autofirmado vs. CA confiable)
+### Módulos de Apache2 necesarios para habilitar SSL/TLS en Ubuntu
 
-### Ejecución técnica
+## Ejecución técnica
   1. Instalamos y verificamos el estado de Apache2 en Ubuntu. En mi caso como ya estaba instalado, muestro solo el estado:
     ![Verificar estado de Apache](https://github.com/JavierMoralesSimon/apacheHttps/blob/main/Capturas/1.png)
   2. Habilitamos los módulos SSL y headers mediante los comandos `sudo a2enmod ssl`, `sudo a2enmod headers` y `sudo systemctl restart apache2`:
@@ -29,6 +29,6 @@
     ![Validar la implementación desde el navegador](https://github.com/JavierMoralesSimon/apacheHttps/blob/main/Capturas/6.3.png)
     ![Validar la implementación desde el navegador](https://github.com/JavierMoralesSimon/apacheHttps/blob/main/Capturas/6.4.png)
 
-### Conclusión
+## Conclusión
 
-### Dificultades encontradas
+## Dificultades encontradas
