@@ -4,7 +4,9 @@
   1. Funcionamiento:
 * Ss
      
-  3. Importancia:
+  2. Importancia:
+* H
+
 ### Tipos de certificados SSL/TLS (autofirmado vs. CA confiable)
 ### Módulos de Apache2 necesarios para habilitar SSL/TLS en Ubuntu
 
