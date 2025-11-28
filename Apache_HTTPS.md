@@ -2,8 +2,7 @@
 ## Investigación
 ### Funcionamiento del protocolo HTTPS y su importancia en la seguridad web
   1. Funcionamiento:
-
-    * Ss
+* Ss
      
   3. Importancia:
 ### Tipos de certificados SSL/TLS (autofirmado vs. CA confiable)
