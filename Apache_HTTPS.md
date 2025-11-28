@@ -2,10 +2,10 @@
 ## Investigación
 ### Funcionamiento del protocolo HTTPS y su importancia en la seguridad web
   1. Funcionamiento:
-* Ss
+  * Ss
      
   2. Importancia:
-* H
+  * H
 
 ### Tipos de certificados SSL/TLS (autofirmado vs. CA confiable)
 ### Módulos de Apache2 necesarios para habilitar SSL/TLS en Ubuntu
