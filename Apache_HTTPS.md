@@ -75,5 +75,7 @@
     ![Validar la implementación desde el navegador](https://github.com/JavierMoralesSimon/apacheHttps/blob/main/Capturas/6.4.png)
 
 ## Conclusión
+A lo largo de este trabajo se ha llevado a cabo el proceso completo para conectarse a HTTPS mediante el servidor web Apache2 en Ubuntu, además de una parte de investigación sobre lo mismo. El resultado muestra un servidor web configurado de manera segura, funcional y acorde con las buenas prácticas en la administración de servicios HTTPS.
 
 ## Dificultades encontradas
+Realmente no ha habido dificultades en el proceso. De haberlo habido, hubiera sido en la parte de ejecución técnica pero todos los comandos que se usaron fueron respondiendo correctamente y acabé cumpliendo a la primera el objetivo de la práctica.
