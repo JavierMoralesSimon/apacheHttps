@@ -24,6 +24,30 @@
       * Los navegadores marcan como “no seguro” todo sitio sin HTTPS.
 
 ### Tipos de certificados SSL/TLS (autofirmado vs. CA confiable)
+  * Certificado autofirmado:
+      * Generado y firmado por el propio administrador del sitio.
+      * No es verificado por una autoridad certificadora (CA).
+      * Provoca advertencias en el navegador.
+      * Útil para entornos locales, pruebas, laboratorios.
+      * No debe usarse en producción.
+
+### **Certificado emitido por CA confiable**
+
+* Firmado por una **Autoridad Certificadora** reconocida (Let’s Encrypt, DigiCert, Sectigo, etc.).
+* Los navegadores lo validan automáticamente.
+* Garantiza autenticidad del servidor ante el usuario.
+* Recomendado para sitios públicos o en producción.
+
+Además, los certificados se clasifican también por nivel de validación:
+
+* **DV (Domain Validation):** más común y automatizable (Let’s Encrypt).
+* **OV (Organization Validation):** valida la empresa propietaria.
+* **EV (Extended Validation):** validación rigurosa, muestra identidad en la barra del navegador.
+
+
+
+
+
 ### Módulos de Apache2 necesarios para habilitar SSL/TLS en Ubuntu
 
 ## Ejecución técnica
