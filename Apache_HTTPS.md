@@ -28,7 +28,7 @@
       * Generado y firmado por el propio administrador del sitio.
       * No es verificado por una autoridad certificadora (CA).
       * Provoca advertencias en el navegador.
-      * Útil para entornos locales, pruebas, laboratorios.
+      * Útil para entornos locales, pruebas y laboratorios.
       * No debe usarse en producción.
 
   * Certificado emitido por CA confiable:
