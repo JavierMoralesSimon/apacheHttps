@@ -42,27 +42,15 @@
     * `mod_ssl`:
       * Habilita SSL/TLS en Apache.
       * Proporciona directivas como `SSLEngine`, `SSLCertificateFile`, etc.
+      * En Ubuntu se activa mediante el comando `sudo a2enmod ssl`.
+    * `mod_socache_shmcb`:
+      * Módulo de caché utilizado por SSL para mejorar el rendimiento en la negociación TLS.
+      * En Ubuntu se activa mediante el comando `sudo a2enmod socache_shmcb`.
 
-2. **`mod_socache_shmcb`**
-
-   * Módulo de caché utilizado por SSL para mejorar rendimiento en la negociación TLS.
-
-En Ubuntu/Debian normalmente se activan así:
-
-```bash
-sudo a2enmod ssl
-sudo a2enmod socache_shmcb
-sudo systemctl restart apache2
-```
-
-### **Opcional pero recomendados**
-
-* **`mod_headers`** → para configurar cabeceras de seguridad (HSTS, CSP, etc.)
-* **`mod_rewrite`** → para redirigir HTTP → HTTPS
-* **`mod_http2`** → para habilitar HTTP/2 sobre TLS (si corresponde)
-
-
-
+  * Módulos opcionales:
+    * `mod_headers` para configurar cabeceras de seguridad.
+    * `mod_rewrite` para redirigir HTTP a HTTPS.
+    * `mod_http2` para habilitar HTTP/2 sobre TLS.
 
 ## Ejecución técnica
   1. Instalamos y verificamos el estado de Apache2 en Ubuntu. En mi caso como ya estaba instalado, muestro solo el estado:
