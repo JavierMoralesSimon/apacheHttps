@@ -17,11 +17,11 @@
       * El certificado permite verificar que el cliente habla con el servidor auténtico.
      
   2. Importancia:
-  * Protege contra ataques de interceptación.
-  * Evita robo de datos sensibles.
-  * Garantiza la identidad del servidor.
-  * Mejora el posicionamiento SEO.
-  * Los navegadores marcan como “no seguro” todo sitio sin HTTPS.
+    * Protege contra ataques de interceptación.
+    * Evita robo de datos sensibles.
+    * Garantiza la identidad del servidor.
+    * Mejora el posicionamiento SEO.
+    * Los navegadores marcan como “no seguro” todo sitio sin HTTPS.
 
 ### Tipos de certificados SSL/TLS (autofirmado vs. CA confiable)
 ### Módulos de Apache2 necesarios para habilitar SSL/TLS en Ubuntu
