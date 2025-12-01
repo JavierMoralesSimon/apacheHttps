@@ -2,7 +2,8 @@
 ## Investigación
 ### Funcionamiento del protocolo HTTPS y su importancia en la seguridad web
   1. Funcionamiento:
-    1.1 Handshake TLS:
+
+     1.1 Handshake TLS:
       * El cliente se conecta al servidor y solicita establecer una comunicación segura.
       * El servidor envía su certificado TLS, que contiene su clave pública y datos de identificación.
       * El cliente verifica la validez del certificado.
