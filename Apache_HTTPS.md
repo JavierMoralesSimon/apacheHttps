@@ -9,7 +9,8 @@
       * El cliente verifica la validez del certificado.
       * Cliente y servidor generan claves de sesión mediante criptografía asimétrica.
 
-     1.2. Una vez completado el handshake, la comunicación usa un cifrado simétrico que es más rápido y eficiente.
+     1.2. Cifrado de datos:
+      * Una vez completado el handshake, la comunicación usa un cifrado simétrico que es más rápido y eficiente.
 
      1.3. Integridad y autenticación:
       * Se utiliza un MAC (Message Authentication Code) para asegurar que los mensajes no se alteren.
