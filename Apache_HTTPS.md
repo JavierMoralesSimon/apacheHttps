@@ -31,24 +31,38 @@
       * Útil para entornos locales, pruebas, laboratorios.
       * No debe usarse en producción.
 
-### **Certificado emitido por CA confiable**
-
-* Firmado por una **Autoridad Certificadora** reconocida (Let’s Encrypt, DigiCert, Sectigo, etc.).
-* Los navegadores lo validan automáticamente.
-* Garantiza autenticidad del servidor ante el usuario.
-* Recomendado para sitios públicos o en producción.
-
-Además, los certificados se clasifican también por nivel de validación:
-
-* **DV (Domain Validation):** más común y automatizable (Let’s Encrypt).
-* **OV (Organization Validation):** valida la empresa propietaria.
-* **EV (Extended Validation):** validación rigurosa, muestra identidad en la barra del navegador.
-
-
-
-
+  * Certificado emitido por CA confiable:
+      * Firmado por una autoridad certificadora.
+      * Los navegadores lo validan automáticamente.
+      * Garantiza autenticidad del servidor ante el usuario.
+      * Recomendado para sitios públicos o en producción.
 
 ### Módulos de Apache2 necesarios para habilitar SSL/TLS en Ubuntu
+  * Módulos esenciales:
+    * `mod_ssl`:
+      * Habilita SSL/TLS en Apache.
+      * Proporciona directivas como `SSLEngine`, `SSLCertificateFile`, etc.
+
+2. **`mod_socache_shmcb`**
+
+   * Módulo de caché utilizado por SSL para mejorar rendimiento en la negociación TLS.
+
+En Ubuntu/Debian normalmente se activan así:
+
+```bash
+sudo a2enmod ssl
+sudo a2enmod socache_shmcb
+sudo systemctl restart apache2
+```
+
+### **Opcional pero recomendados**
+
+* **`mod_headers`** → para configurar cabeceras de seguridad (HSTS, CSP, etc.)
+* **`mod_rewrite`** → para redirigir HTTP → HTTPS
+* **`mod_http2`** → para habilitar HTTP/2 sobre TLS (si corresponde)
+
+
+
 
 ## Ejecución técnica
   1. Instalamos y verificamos el estado de Apache2 en Ubuntu. En mi caso como ya estaba instalado, muestro solo el estado:
