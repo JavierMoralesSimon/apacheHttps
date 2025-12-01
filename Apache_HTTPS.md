@@ -7,12 +7,14 @@
       * El servidor envía su certificado TLS, que contiene su clave pública y datos de identificación.
       * El cliente verifica la validez del certificado.
       * Cliente y servidor generan claves de sesión mediante criptografía asimétrica.
-    1.2. Una vez completado el handshake, la comunicación usa un cifrado simétrico que es más rápido y eficiente.
-    1.3. Integridad y autenticación:
+
+     1.2. Una vez completado el handshake, la comunicación usa un cifrado simétrico que es más rápido y eficiente.
+
+     1.3. Integridad y autenticación:
       * Se utiliza un MAC (Message Authentication Code) para asegurar que los mensajes no se alteren.
       * El certificado permite verificar que el cliente habla con el servidor auténtico.
      
-  2. Importancia:
+  3. Importancia:
   * H
 
 ### Tipos de certificados SSL/TLS (autofirmado vs. CA confiable)
